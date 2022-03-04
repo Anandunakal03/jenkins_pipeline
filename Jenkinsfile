@@ -8,7 +8,7 @@ pipeline {
 			}
 		}
 		stage('Test'){
-			agent { label: node2 }
+			agent { label: master }
 			steps {
 				sh '''
 					sleep 5
